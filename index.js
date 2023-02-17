@@ -21,6 +21,13 @@ inquirer
     },
   ])
 
+
+
+
+  
+
+
+  // construction and file writing
   .then((answers) => {
     const data = `Name: ${answers.name}\nLanguages: ${answers.languages}\nPreferred method of communication: ${answers.comms}\n`;
 
