@@ -1,6 +1,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-
+const path = require('path');
+const generateMarkdown = require("./utils/generateMarkdown");
 
 inquirer
   .prompt([
@@ -24,7 +25,7 @@ inquirer
 
 
 
-  
+
 
 
   // construction and file writing
