@@ -1,7 +1,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const path = require('path');
-const generateMarkdown = require("./utils/generateMarkdown");
+
 
 inquirer
   .prompt([
@@ -69,7 +69,7 @@ inquirer
 
     \n## Contributing 
     
-    \n${answers.contribution}
+    \n${answers.contributing}
 
     \n## Tests 
     
@@ -79,8 +79,8 @@ inquirer
     
     \n${answers.questions}`;
 
-    fs.writeFile('Readmeinfo.js', data, (err) => {
+    fs.writeFile('Readmeinfo.md', data, (err) => {
       if (err) throw err;
-      console.log('Data saved to your README.md file!');
+      console.log('Data saved to your Readmeinfo.md file!');
     });
   });
