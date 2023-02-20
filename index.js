@@ -27,6 +27,11 @@ inquirer
     },
     {
       type: 'input',
+      message: 'Write license instrucions: ',
+      name: 'license',
+    },
+    {
+      type: 'input',
       message: 'Write contributing instructions: ',
       name: 'contributing',
     },
@@ -44,8 +49,35 @@ inquirer
 
   // construction and file writing
   .then((answers) => {
-    const data = `##${answers.title}
-    \n# Description ${answers.description}`;
+    const data = `# ${answers.title}
+
+    \n## Description 
+    
+    \n${answers.description}
+
+    \n## Installation 
+    
+    \n${answers.installation}
+
+    \n## Useage 
+    
+    \n${answers.usage}
+
+    \n## License 
+    
+    \n${answers.license}
+
+    \n## Contributing 
+    
+    \n${answers.contribution}
+
+    \n## Tests 
+    
+    \n${answers.tests}
+
+    \n## Questions 
+    
+    \n${answers.questions}`;
 
     fs.writeFile('Readmeinfo.js', data, (err) => {
       if (err) throw err;
