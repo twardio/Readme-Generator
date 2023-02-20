@@ -22,7 +22,7 @@ This application is for any developer to generate an easy README file
 ## License 
     
     
-Firstly, clone the repository from Git Hub here: https://github.com/twardio/Readme-Generator. Secondly, run node. Lastly, answer the prompts which will generate a README file in the Readmeinfo.js file. 
+This application is covered under the MIT license
 
     
 ## Contributing 
@@ -34,7 +34,7 @@ To contribute to this application, contact me on madeupemailaddress.gmail.com
 ## Tests 
     
     
-This application is covered under the MIT license
+Npm test
 
     
 ## Questions 
