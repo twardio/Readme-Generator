@@ -6,7 +6,7 @@
     
 This application will prompt you with questions and format your responses in an easy generated README file. 
 
-![Application screenshot](assets\screenshot.png)
+![Application screenshot](screenshot.png)
 
     
 ## Installation 
